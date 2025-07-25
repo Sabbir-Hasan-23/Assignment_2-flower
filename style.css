@@ -256,8 +256,96 @@ nav ul li a{
 
 
 
+.join{
+  max-width: 1440px;
+  height: 530px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-image: url(news-letter-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
-/* responsive */
+.join h2{
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+input[type="email"]
+{
+  max-width: 640px;
+  height: 50px;
+  padding: 15px 500px 15px 20px;
+  border: none;
+}
+.subscribe button{
+  background-color: #E95A08;
+  height: 50px;
+  width: 180px;
+  margin-left: -4px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+footer{
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: 50px;
+}
+ .footer-list{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+ }
+ footer ul
+ {
+  list-style: none;
+ }
+ footer ul li a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+ }
+  .ul-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ul-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-logo p{
+    font: 22px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+  }
+  .footer-logo{
+    max-width: 360px;
+  }
+   .link{
+    max-width: 36px;
+    height: 36px;
+   }
+  .contact-logo{
+    display: flex;
+    gap: 25px;
+  }
+
 
 @media screen and (max-width:576px) {
   nav{
@@ -346,3 +434,38 @@ nav ul li a{
   .main-img{
     max-width: 390px;
   }
+
+  .join{
+    width: 100%;
+    height: 276px;
+  }
+  .join h2{
+    font-size: 20px;
+  }
+  input[type="email"]
+  {
+    max-width: 218px;
+    padding: 0;
+    padding-left: 20px;
+  }
+  .subscribe button{
+    width: 103px;
+  }
+  footer{
+    max-width: 393px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .footer-list{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 10px;
+}
+.footer-list{
+  margin-top: -80px;
+}
+.contact-logo{
+  margin-top: -55px;
+}
+
+}
